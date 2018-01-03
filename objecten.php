@@ -16,10 +16,11 @@
     echo "<br>De leeftijd van Thamara is:" . $thamara->getLeeftijd();
     $thamara->setNaam(12343);
     $thamara->getNaam();
-    $thamara->setLeeftijd('twintig');
-    $thamara->getLeeftijd();
+    // $thamara->setLeeftijd('twintig');
+    // $thamara->getLeeftijd();
     $thamara->printGegevens();
     $demirel->printGegevens();
+
 
     $user1 = new User("Shireen ", 22, "vrouw", "Shireen@gmail.com", "Uh65Tg", true);
     echo "<br>Naam van user1 is:" . $user1->getNaam();
@@ -28,10 +29,19 @@
     $item1 = new Item("001", "Toshiba", "Satelite", 999.99, 10);
     $item2 = new Item("002", "Acer", "Aspire", 1099.99, 5);
 
+
     $myShoppingcart = new MyShoppingcart();
     $myShoppingcart->addToCart($item1);
     $myShoppingcart->addToCart($item2);
     $myShoppingcart->printCart();
+
+    try{
+      $item1->setAantal("drie");
+    }
+    catch (Exception $e){
+      die( $e->__toString());
+    }
+
 
   ?>
 </body>

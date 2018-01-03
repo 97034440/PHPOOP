@@ -214,6 +214,23 @@ class Item {
   //
   // }
 
+
+  // interface {
+  //   public function getID(Item $item);
+  //   public function getPrijs();
+  // }
+  //
+  // abstract class Item implements Iitem {
+  //   protected $items = array();
+  //   public function getID($item){
+  //     $this->items = $item;
+  //   }
+  //   public function getPrijs($item){
+  //     $this->item = $item;
+  //   }
+  // }
+
+
 }
 // einde item
 ?>
